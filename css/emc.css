@@ -1,14 +1,11 @@
 @font-face {
   font-family: 'Simplifica';
-  src: url('simplifica.ttf')  format('truetype');
+  src: url('../dist/fonts/simplifica.ttf')  format('truetype');
 }
 
-
-.logo {
-  text-align: center;
-  padding-top: 20%;
+.ui-loader {
+	display: none;
 }
-
 
 .navbar {
 	background-color: #fff;
@@ -44,6 +41,42 @@
 }
 
 
+.carousel-control {
+	display:none;
+}
+
+.carousel {
+	max-width: 700px;
+	display:block;
+	overflow:auto;
+	margin:0 auto;
+}
+
+.editorial {
+	font-family: 'Simplifica';
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: 300px auto;
+}
+
+.editorial h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+	opacity: 1.0;
+}
+
+.editorial h4 {
+	line-height: 1.5;
+}
+
+.editorial p {
+	text-align: justify;
+	font-size: 24px;
+	opacity: 1.0;
+}
+
+
 .btn-custom {
 	color: #000;
 	background-color: #fff;
@@ -52,6 +85,7 @@
 	font-size: 4.0vmin;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	padding: 10px 14px;
 	text-transform: uppercase;
 }
 
@@ -62,7 +96,7 @@
 	}
 	
 	.btn-custom {
-		font-size: 2.5vmin;
+		font-size: 3.0vmin;
 	}
 }
 
@@ -72,9 +106,6 @@
 		margin-right: 2%;
 	}
 
-	.btn-custom {
-		font-size: 3.0vmin;
-	}
 }
 
 .btn-custom:hover, .btn-custom.hover {
@@ -102,50 +133,48 @@
 
 }
 
+.btn-logo {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 10px
+}
+
+.btn-logo img {
+	height: 16px;
+}
+
 .btn:focus,.btn:active {
    outline: none !important;
 }
 
-.modal-title {
-	font-size: 40px;
-	font-family: 'Simplifica';
-	text-transform: uppercase;
+.logo {
+  text-align: center;
+  padding-top: 20%;
 }
 
-.modal-body p{
-	text-align: justify;
-	font-size: 24px;	
-	font-family: 'Simplifica';
+.logo img {
+  max-width: 500px;
+  width: 80%;
 }
 
-.modal-body h2 {
-	font-family: 'Simplifica';
+footer {
+	width: 100%;
+	overflow: auto;
+	vertical-align: middle;
+	padding: 10px;
+	margin-top: 10px;
+	text-align: center;
 }
 
-.modal-body h4 {
-	line-height: 1.5;
+footer a {
+	border-radius: 5px;
+	padding: 10px;
 }
 
-.modal-body a {
-	color: #777;
+footer a:hover {
+    background-color: #777;
 }
 
-.modal-body a:hover {
-	color: #000;
+footer img {
+	height: 20px;
 }
-
-#background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    overflow: hidden;
-    text-align: justify;
-    line-height: 2.5vmax;
-	font-size: 2.0vmax;
-	font-family: 'Josefin Slab', serif;
-	color: #bbb;
-}
-
