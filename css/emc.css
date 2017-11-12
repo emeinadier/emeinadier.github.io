@@ -63,25 +63,24 @@
     background-image: url('../img/logo-new.png') ;
     padding-bottom: 70px;
     margin-bottom: 30px;
+	text-align: justify;
+	font-size: 24px;
 }
 
 
 .editorial h2 {
 	font-size: 40px;
 	text-transform: uppercase;
+	text-align: left;
 }
 
 .editorial h4 {
 	font-size: 30px;
 	font-weight: bold;	
 	text-transform: uppercase;
+	text-align: left;
 	line-height: 1.5;
 	padding-top: 15px;
-}
-
-.editorial p {
-	text-align: justify;
-	font-size: 24px;
 }
 
 .editorial a {
@@ -163,7 +162,6 @@
 
 .logo {
   text-align: center;
-  padding-top: 20%;
 }
 
 .logo img {
