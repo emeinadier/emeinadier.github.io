@@ -14,11 +14,12 @@
 
 .logo {
   	text-align: center;
-  	font-family: 'Diner Regular';
-	font-size: 65.0vmin;
-	letter-spacing: 0.1em;
-	padding-left: 0.09em;
-	margin-top: -0.2em;
+  	padding-top: 10vmin;
+}
+
+.logo img {
+  	max-width: 500px;
+  	width: 40vmax;
 }
 
 .logo-footer {
@@ -29,11 +30,6 @@
 	letter-spacing: 0.1em;
 	padding-left: 0.09em;
 	padding-top: 10px;
-}
-
-.logo img {
-  	max-width: 500px;
-  	width: 80%;
 }
 
 .navbar {
@@ -88,6 +84,12 @@
 	font-family: 'Simplifica';
 	text-align: justify;
 	font-size: 24px;
+	background-position: bottom; 
+	background-repeat: no-repeat;
+    background-size: 100px auto;
+    background-image: url('../img/logo.png') ;
+    padding-bottom: 120px;
+    margin-bottom: 30px;
 }
 
 
@@ -214,11 +216,6 @@ footer img {
 	.btn-custom {
 		font-size: 3.0vmin;
 	}
-
-	.logo {
-		font-size: 50.0vmin;
-	}
-
 }
 
 @media (min-width: 1200px) {
