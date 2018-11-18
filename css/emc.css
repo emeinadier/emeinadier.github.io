@@ -89,6 +89,7 @@
     background-size: 100px auto;
     background-image: url('../img/logo.png') ;
     padding-bottom: 120px;
+    padding-left: 3px;
     margin-bottom: 30px;
 }
 
