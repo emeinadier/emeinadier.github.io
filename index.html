@@ -216,19 +216,19 @@
 <script src="dist/bootstrap/js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
-    ('.nav li').on('click', function(){
-        if (('.navbar-toggle').is(':visible')) {
-            ('.navbar-toggle').click()
+    $('.nav li').on('click', function(){
+        if ($('.navbar-toggle').is(':visible')) {
+            $('.navbar-toggle').click()
         }
     });
 
 
-    ('.carousel').on('swipeleft', function() {
-        (this).carousel('next');
+    $('.carousel').on('swipeleft', function() {
+        $(this).carousel('next');
     });
 
-    ('.carousel').on('swiperight', function() {
-        (this).carousel('prev');
+    $('.carousel').on('swiperight', function() {
+        $(this).carousel('prev');
     });
 
 </script>
