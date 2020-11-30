@@ -70,8 +70,8 @@
 
 .nav-button-active {
 	color: #fff !important;
-	background-color: #bbb;
-	border-radius: 3px;
+	background-color: #bbb !important;;
+	border-radius: 3px !important;;
 }
 
 .icon {
