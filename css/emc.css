@@ -20,6 +20,8 @@
 .logo {
   	text-align: center;
   	padding-top: 10vmin;
+  	padding-bottom: 10vmin;
+	width: 100%;
 }
 
 .logo img {
@@ -137,6 +139,30 @@
   	color: #000;
 	-webkit-filter: invert();
     color: #fff;
+}
+
+.btn-custom {
+	background: #a1bcaf;
+	color: #fff;
+}
+
+.btn-custom:disabled {
+	background: #ddd;
+	color: #777;
+}
+
+.btn-custom:active {
+	background: #83bfa2;
+	color: #fff !important;
+}
+
+.alert-custom {
+	background: #a1bcaf;
+	color: #fff;
+}
+
+.alert-custom a {
+	color: #fff
 }
 
 /* Talents page */
