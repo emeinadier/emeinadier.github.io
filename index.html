@@ -59,6 +59,7 @@
     <div id="nav-carousel" class="carousel slide" data-interval="false" data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
+
             <div class="item active">
                 <div class="logo"><img src="img/logo.png" alt="EMC Logo"/></div>
             </div>
@@ -73,6 +74,32 @@
             <div class="item editorial" id="team-html"></div>
 
             <div class="item editorial" id="guides-html"></div>
+            <!-- Modal -->
+            <div class="modal" id="pdf-modal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header
+                                <i class="fa fa-download"></i>
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="100%" src="pdf/2020-SPRING-EMCxGoGo.pdf">
+                            </iframe>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
 
             <div class="item editorial" id="contact-html"></div>
 
@@ -127,6 +154,14 @@
         });
     });
 
+    $('#pdf-modal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var pdf = button.data('pdf-file') // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        $(this).find('.modal-body iframe').attr('src', 'https://drive.google.com/viewerng/viewer?url=https://www.emcparis.com/pdf/'+pdf)
+    })
+
     $('.nav li').on('click', function(){
         if ($('.navbar-toggle').is(':visible')) {
             $('.navbar-toggle').click()
@@ -151,6 +186,7 @@
         $('#nav-carousel').carousel(parseInt(hash));
     else
         $('#nav-carousel').carousel(0);
+
 
 </script>
 
