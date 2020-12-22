@@ -230,21 +230,11 @@
 	font-size: 1em;
 }
 
-.modal-body {
-	height: calc(100vh - 200px);
-	overflow-y: auto;
-}
-
-
 /* Responsive */
 @media (min-width: 992px) {
 	.navbar-nav li {
 		display: inline-block;
 		float: none;
-	}
-
-	.modal-dialog {
-		width: 900px;
 	}
 }
 
