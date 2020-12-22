@@ -15,13 +15,17 @@
     <!-- Bootstrap core CSS -->
     <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 
+    <!-- Font Awesome -->
+    <link href="dist/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="css/emc.css" rel="stylesheet"/>
 </head>
 
 <body>
+<nav class="navbar navbar-default"></nav>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -29,19 +33,22 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" height="40px" alt="">
+        </a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-center">
-            <li class="btn btn-custom btn-lg" data-target="#nav-carousel" data-slide-to="1">our story</li>
-            <li class="btn btn-custom btn-lg" data-target="#nav-carousel" data-slide-to="2" >european fashion weeks</li>
-            <li class="btn btn-custom btn-lg" data-target="#nav-carousel" data-slide-to="3">digital services</li>
-            <li class="btn btn-custom btn-lg" data-target="#nav-carousel" data-slide-to="4">clients - press</li>
-            <li class="btn btn-custom btn-lg" data-target="#nav-carousel" data-slide-to="5">clients - digital</li>
-            <li class="btn btn-custom btn-lg"><a href="pdf/EMCxGogoWinter2018.pdf" target="_new">newsletter</a></li>
-            <li class="btn btn-custom btn-lg" data-target="#nav-carousel" data-slide-to="6">contact</li>
-            <li class="btn btn-custom btn-lg">
+            <li><a class="nav-button" data-target="#nav-carousel" data-slide-to="1" href="#1">C is for Consulting</a></li>
+            <li><a class="nav-button" data-target="#nav-carousel" data-slide-to="2" href="#2">Services</a></li>
+            <li><a class="nav-button" data-target="#nav-carousel" data-slide-to="3" href="#3">Talents</a></li>
+            <li><a class="nav-button" data-target="#nav-carousel" data-slide-to="4" href="#4">Media</a></li>
+            <li><a class="nav-button" data-target="#nav-carousel" data-slide-to="5" href="#5">Team</a></li>
+            <li><a class="nav-button" data-target="#nav-carousel" data-slide-to="6" href="#6">Guides</a></li>
+            <li><a class="nav-button" data-target="#nav-carousel" data-slide-to="7" href="#7">Contact</a></li>
+            <li>
                 <a href="https://www.instagram.com/emc_paris/" target="_new">
-                    <span class="glyphicon glyphicon-camera icon"> </span>
+                    <i class="fab fa-instagram"></i>
                 </a>
             </li>
         </ul>
@@ -50,145 +57,25 @@
 
 <div class="container">
     <div id="nav-carousel" class="carousel slide" data-interval="false" data-ride="carousel">
-        <!-- Indicators -->
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
+
             <div class="item active">
                 <div class="logo"><img src="img/logo.png" alt="EMC Logo"/></div>
             </div>
-            <div class="item editorial">
-                <h2>Our story</h2>
-                <p>
-                    After 10 years in the Hearst Magazine’s Paris office, Los Angeles born Emilie Meinadier took her
-                    invaluable network and expertise to set up her own agency, Emilie Meinadier Consulting, in 2007.
-                    Debuting with the Hearst portfolio, her client list grew rapidly to include the New York Times and
-                    T Magazine, W Magazine, Glamour (US), New York Magazine and GQ (US).  With her distinct
-                    understanding of the demands of the American press, EMC synthesizes a unique palette of services
-                    centered around the European Ready to Wear and Haute Couture shows. Based in Paris, indisputably
-                    the premier fashion capital, EMC also covers Milan and London. In 2015, reflecting new evolutions
-                    in the industry, the agency’s first digital client, Instagram, came on board and, soon after, India
-                    Leclery joined the team to head EMC’s digital expansion.
-                </p>
-            </div>
+            <div class="item editorial" id="consulting-html"></div>
 
-            <div class="item editorial">
-                <h2>European fashion weeks</h2>
-                <p>
-                    Based on inside-out knowledge of the industry and of the European fashion capitals, we master
-                    logistics for the Men’s and Women’s Ready to Wear and Haute Couture shows in London, Milan and
-                    Paris.
-                </p>
-                <ul>
-                    <li>on-site facilitator &amp; executor for all Fashion Week operations</li>
-                    <li>request, negotiate and secure invitations to shows, presentations &amp; events</li>
-                    <li>schedule strategic market and business meetings</li>
-                    <li>arrange designer interviews &amp; photo coverage</li>
-                    <li>year-round development of relationships within the fashion and luxury industries</li>
-                    <li>news on local cultural events</li>
-                </ul>
-            </div>
+            <div class="item editorial" id="services-html"></div>
 
-            <div class="item editorial">
-                <h2>Digital services</h2>
-                <p>
-                    We bring the same expertise to our portfolio of carefully selected digital influencers, during
-                    Fashion Weeks, and in the context of year-round engagements which facilitate organic brand
-                    positioning in luxury markets even further.
-                </p>
-                <ul>
-                    <li>create concise and strategic promotional support to introduce the talent to our Fashion PR
-                        network through relevant imagery and text</li>
-                    <li>send post fashion week reporting to the brands covered by the talent</li>
-                    <li>build strategic relationships with fashion and luxury brands in the interest of harvesting
-                        future partnerships</li>
-                    <li>image building and creative content consulting</li>
-                </ul>
-            </div>
+            <div class="item editorial" id="talents-html"></div>
 
-            <div class="item editorial">
-                <h2>Clients - Press</h2>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p>
-                            <a href="http://nymag.com" target="_new">New York Magazine</a><br/>
-                            <a href="https://www.thecut.com" target="_new">The Cut</a><br/>
-                            <a href="https://www.nytimes.com" target="_new">The New York Times</a><br/>
-                            <a href="https://www.nytimes.com/section/t-magazine" target="_new">T Magazine</a><br/>
-                            <a href="http://www.townandcountrymag.com" target="_new">Town & Country</a><br/>
-                            <a href="http://www.vogue.mx" target="_new">Vogue México y Latinoamérica</a><br/>
-                            <a href="https://www.wmagazine.com" target="_new">W Magazine</a><br/>
-                        </p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p>
-                            <a href="https://www.allure.com" target="_new">Allure</a><br/>
-                            <a href="https://www.condenastinternational.com" target="_new">Condé Nast International</a><br/>
-                            <a href="http://www.cosmopolitan.com" target="_new">Cosmopolitan</a><br/>
-                            <a href="http://www.elledecor.com" target="_new">Elle Decor</a><br/>
-                            <a href="https://www.glamour.com" target="_new">Glamour</a><br/>
-                            <a href="https://www.gq.com" target="_new">GQ</a><br/>
-                            <a href="https://www.gq.com/gqstyle" target="_new">GQStyle</a><br/>
-                            <a href="http://www.vogue.co.uk" target="_new">Vogue UK</a><br/>
-                            <a href="https://www.wsj.com" target="_new">The Wall Street Journal</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <div class="item editorial" id="media-html"></div>
 
-            <div class="item editorial">
-                <h2>Clients - Digital</h2>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h4>Year round</h4>
-                        <p>
-                            <a href="http://thriftsandthreads.com" target="_new">Brittany Xavier</a><br/>
-                            <a href="https://thechrisellefactor.com" target="_new">Chriselle Lim</a><br/>
-                            <a href="https://millennielle.com/" target="_new">Coco Bassey</a><br/>
-                            <a href="https://www.instagram.com/larsenthompson" target="_new">Larsen Thompson</a><br/>
-                            <a href="https://www.instagram.com/leoniehanne" target="_new">Leonie Hanne</a><br/>
-                            <a href="https://www.instagram.com/madelynnfurlong" target="_new">Madelynn Furlong</a><br/>
-                            <a href="https://thewalk.com.mx/blog/" target="_new">The Walk</a><br/>
-                        </p>
-                        <h4>Fashion Week Support</h4>
-                        <p>
-                            <a href="https://www.instagram.com/evachen212" target="_new">Instagram</a><br/>
-                            <a href="https://www.snapchat.com/discover/What-the-Fashion/7102008199" target="_new">Snapchat</a><br/>
-                            <a href="https://www.youtube.com/channel/UCrpQ4p1Ql_hG8rKXIKM1MOQ" target="_new">YouTube</a><br/>
-                        </p>
-                    </div>
-                    <div class="col-sm-6">
-                        <h4>Seasonal</h4>
-                        <p>
-                            <a href="http://www.dearmilano.com" target="_new">Andrea Maria</a><br/>
-                            <a href="https://www.instagram.com/doina" target="_new">Doina Ciobanu</a><br/>
-                            <a href="https://damselindior.com" target="_new">Jacey Duprie</a><br/>
-                            <a href="http://nativefox.com" target="_new">Jennifer Grace</a><br/>
-                            <a href="https://www.instagram.com/oliviavlopez" target="_new">Olivia Lopez</a><br/>
-                            <a href="https://www.happilygrey.com" target="_new">Mary Lee Lawless</a><br/>
-                            <a href="https://blankitinerary.com" target="_new">Paola Alberdi</a><br/>
-                            <a href="https://www.instagram.com/shionat" target="_new">Shiona Turini</a><br/>
-                            <a href="https://www.instagram.com/tamara" target="_new">Tamara Kalinic</a><br/>
-                            <a href="https://www.instagram.com/taniasarin" target="_new">Tania Sarin</a><br/>
-                            <a href="https://www.paridust.com" target="_new">Pari Ehsan</a><br/>
-                            <a href="https://www.youtube.com/channel/UCWkDFq1pO7YNzifE3A4UsMA" target="_new">Valeria Lipovetsky</a><br/>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <div class="item editorial" id="team-html"></div>
 
-            <div class="item editorial">
-                <h2>Contact</h2>
-                <p>
-                    <span class="glyphicon glyphicon-envelope icon"> </span>
-                    <a href="mailto:info@meinadier.com?subject=Contact from www.meinadier.com">
-                        info@meinadier.com
-                    </a>
-                </p>
-                <p>
-                    <span class="glyphicon glyphicon-camera icon"> </span>
-                    <a href="https://www.instagram.com/emc_paris/" target="_new">@emc_paris</a>
-                </p>
-            </div>
+            <div class="item editorial" id="guides-html"></div>
+
+            <div class="item editorial" id="contact-html"></div>
 
 
             <!-- Left and right controls -->
@@ -216,12 +103,36 @@
 <script src="dist/bootstrap/js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
+
+    $(document).ready(function(){
+        $.get( "consulting.html", function( data ) {
+            $( "#consulting-html" ).append(data);
+        });
+        $.get( "services.html", function( data ) {
+            $( "#services-html" ).append(data);
+        });
+        $.get( "talents.html", function( data ) {
+            $( "#talents-html" ).append(data);
+        });
+        $.get( "media.html", function( data ) {
+            $( "#media-html" ).append(data);
+        });
+        $.get( "team.html", function( data ) {
+            $( "#team-html" ).append(data);
+        });
+        $.get( "guides.html", function( data ) {
+            $( "#guides-html" ).append(data);
+        });
+        $.get( "contact.html", function( data ) {
+            $( "#contact-html" ).append(data);
+        });
+    });
+
     $('.nav li').on('click', function(){
         if ($('.navbar-toggle').is(':visible')) {
             $('.navbar-toggle').click()
         }
     });
-
 
     $('.carousel').on('swipeleft', function() {
         $(this).carousel('next');
@@ -230,6 +141,18 @@
     $('.carousel').on('swiperight', function() {
         $(this).carousel('prev');
     });
+
+    $('.nav-button').on('click', function() {
+        $('.nav-button').removeClass('nav-button-active');
+        $(this).addClass('nav-button-active');
+    });
+
+    var hash = $(location).attr('hash').substring(1);
+    if (hash && parseInt(hash))
+        $('#nav-carousel').carousel(parseInt(hash));
+    else
+        $('#nav-carousel').carousel(0);
+
 
 </script>
 

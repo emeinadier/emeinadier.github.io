@@ -1,0 +1,104 @@
+<h2>Contact</h2>
+<div class="alert alert-custom">
+    <p> Don't forget to check our Instagram :
+        <a href="https://www.instagram.com/emc_paris/" target="_blank">
+            <i class="fab fa-instagram"></i>
+            emc_paris
+        </a>
+    </p>
+</div>
+
+<div class="green-line form-group">
+    <div id="contact-form-success" style="display: none">
+        <div class="jumbotron">
+            <h1 class="display-4"><i class="fas fa-check-circle text-success"></i> Thank you!</h1>
+            <div class="lead">Your message has been sent, we will get back to you shortly.</div>
+        </div>
+    </div>
+
+    <div id="contact-form-error" style="display: none">
+        <div class="jumbotron">
+            <h1 class="display-4"><i class="fas fa-exclamation-circle text-danger"></i> Oops !</h1>
+            <p class="lead text-danger">A technical glitch prevented your message from being sent.</p>
+            <p>Please try again or contact us directly at <a href="mailto:info@meinadier.com?subject=Contact from www.emcparis.com">info@meinadier.com</a></p>
+        </div>
+    </div>
+
+    <form id="contact-form" action="https://formspree.io/f/moqpnkrd" method="POST">
+        <p>
+            Please use the form below to send us a message or contact us directly at
+            <a href="mailto:info@meinadier.com?subject=Contact from www.emcparis.com">info@meinadier.com</a>
+        </p>
+        <div class="form-group">
+            <label for="contact-email">Your email</label>
+            <input type="email" name="_replyto" class="form-control" id="contact-email" required="true" placeholder="Enter email">
+        </div>
+
+        <div class="form-group">
+            <label for="contact-message">Your message</label>
+            <textarea name="message" class="form-control" id="contact-message" placeholder="Enter your message" rows="3"></textarea>
+        </div>
+
+        <div class="text-left">
+            <button id="contact-form-button" class="btn btn-lg btn-custom" disabled>Send</button>
+        </div>
+    </form>
+
+</div>
+
+<script type="text/javascript">
+    // get the form elements defined in your form HTML above
+    var form = $("#contact-form");
+    var button = $("#contact-form-button");
+    var status_ok = $("#contact-form-success");
+    var status_ko = $("#contact-form-error");
+
+    // Success and Error functions for after the form is submitted
+    function success() {
+        form.get(0).reset();
+        form.get(0).style = "display: none";
+        status_ok.get(0).style = "display: block";
+    }
+
+    function error() {
+//        form.get(0).style = "display: none";
+        status_ko.get(0).style = "display: block";
+    }
+
+    // handle the form submission event
+    form.on('submit', function (ev) {
+        ev.preventDefault();
+        var data = new FormData(form.get(0));
+        ajax(form.get(0).method, form.get(0).action, data, success, error);
+    });
+
+    // helper function for sending an AJAX request
+    function ajax(method, url, data, success, error) {
+        var xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                success(xhr.response, xhr.responseType);
+            } else {
+                error(xhr.status, xhr.response, xhr.responseType);
+            }
+        };
+        xhr.send(data);
+    }
+
+    $('.form-control').on('change', function(){
+        form_activate = true;
+        $('.form-control').each(function () {
+            if ($(this).attr('required') && $(this).val()=="") form_activate = false;
+        })
+
+        if (form_activate)
+            $('#contact-form-button').removeAttr('disabled');
+        else
+            $('#contact-form-button').attr('disabled', 'disabled')
+    });
+
+
+</script>
