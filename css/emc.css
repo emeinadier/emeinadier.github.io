@@ -32,7 +32,7 @@
 /* Nav */
 
 .navbar-brand {
-	padding: 10px 10px 0px 15px;
+	padding: 10px 10px 0 15px;
 }
 
 .navbar-default {
@@ -45,8 +45,8 @@
 }
 
 .navbar-default li {
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .navbar-default a {
@@ -136,7 +136,6 @@
 
 .editorial a:hover,
 .editorial a:focus {
-  	color: #000;
 	-webkit-filter: invert();
     color: #fff;
 }
@@ -262,7 +261,7 @@
 	}
 	.navbar-nav {
 		float: none!important;
-		margin-top: 7.5px;
+		margin-top: 7px;
 	}
 	.navbar-nav>li {
 		float: none;
