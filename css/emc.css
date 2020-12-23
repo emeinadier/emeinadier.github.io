@@ -51,7 +51,7 @@
 
 .navbar-default a {
 	color: #000;
-	font-family: 'Simplifica';
+	font-family: 'Simplifica', sans-serif;
 	font-size: 2.0em;
 	margin-top: 5px;
 	padding: 5px 10px 2px;
@@ -102,7 +102,7 @@
 /* Content */
 
 .editorial {
-	font-family: 'Sertig';
+	font-family: 'Sertig', sans-serif;
 	font-size: 1.3em;
 	text-align: justify;
 	background-position: bottom; 
@@ -213,7 +213,7 @@
 	text-align: center;
 	line-height: 1;
 	color: white;
-	font-family: 'Century Gothic';
+	font-family: 'Century Gothic', sans-serif;
 	text-transform: uppercase;
 	font-weight: bolder;
 	background-color: rgba(50, 50, 50, 0.5);
