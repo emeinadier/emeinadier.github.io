@@ -229,6 +229,10 @@
 	font-size: 1em;
 }
 
+.spacing {
+	margin-bottom: 25px;
+}
+
 /* Responsive */
 @media (min-width: 992px) {
 	.navbar-nav li {
