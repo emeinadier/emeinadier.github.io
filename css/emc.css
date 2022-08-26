@@ -136,8 +136,12 @@
 
 .editorial a:hover,
 .editorial a:focus {
-	-webkit-filter: invert();
     color: #fff;
+}
+
+.guides a:hover,
+.guides a:focus {
+	-webkit-filter: invert();
 }
 
 .btn-custom {
